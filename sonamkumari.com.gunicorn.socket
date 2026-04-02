@@ -1,0 +1,19 @@
+Syntax:- 
+[Unit]
+Description=your_domain.gunicorn socket
+
+[Socket]
+ListenStream=/run/your_domain.gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
+
+Example:- 
+[Unit]
+Description=sonamkumari.com.gunicorn socket
+
+[Socket]
+ListenStream=/run/sonamkumari.com.gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
